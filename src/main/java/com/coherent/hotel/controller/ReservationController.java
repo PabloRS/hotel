@@ -18,7 +18,7 @@ public class ReservationController {
 
     @PostMapping()
     public ReservationDto createReservation(@RequestBody ReservationDto input) {
-        log.traceEntry("Save a new reservation: {}", input);
+        log.traceEntry("Create a new reservation: {}", input);
         return log.traceExit(reservationService.createReservation(input));
     }
 
