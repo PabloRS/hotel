@@ -1,14 +1,14 @@
 package com.coherent.hotel.service;
 
-import com.coherent.hotel.model.Reservation;
+import com.coherent.hotel.dto.ReservationDto;
 
 import java.util.Set;
 
 public interface ReservationService {
 
-    Reservation createReservation(Reservation input);
+    ReservationDto createReservation(ReservationDto input);
 
-    Set<Reservation> readAllReservations();
+    Set<ReservationDto> readAllReservations();
 
-    Reservation updateReservation(Integer reservationId, Reservation updateReservation);
+    ReservationDto updateReservation(Integer reservationId, ReservationDto updateReservation);
 }
